@@ -1,0 +1,175 @@
+@import "sticky-footer.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #56595B;
+  font-family: "Hind", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  background-color: #F4F3E1;
+  padding: 1em;
+}
+
+::selection      { background: #f7ef6f; }
+::-moz-selection { background: #f7ef6f; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p a,
+p a:active,
+p a:visited,
+p a:hover {
+  font-weight: 600;
+  color: #00A9C4;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.yunus-whale {
+  background-image: url('../images/yunus-whale@2x.png');
+  background-size: 51px 53px;
+  height: 53px;
+  width: 51px
+}
+
+.message-row { margin-top: .2em; }
+.card-row    { margin: .5em 0; }
+
+.message {
+  border-radius: 1.2em;
+  background-color: white;
+  display: inline-block;
+  padding: .5em .8em;
+}
+
+.message-middle {
+  border-top-left-radius: .4em;
+  border-bottom-left-radius: .4em;
+}
+
+.message-bottom {
+  border-top-left-radius: .4em;
+}
+
+.card {
+  border-radius: .7em;
+  background-color: white;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  width: 111px;
+  height: 111px;
+  text-align: center;
+  display: inline-block;
+  padding-top: 1.2em;
+  cursor: pointer;
+  border: 3px solid white;
+  position: relative;
+}
+
+.card-portfolio:hover,
+.card-portfolio.card-active { border-color: #B6EFE4; }
+.card-biography:hover { border-color: #C0C0FC; }
+.card-resume:hover    { border-color: #F7EF6F; }
+
+.card:hover .card-icon-small,
+.card-active .card-icon-small {
+  visibility: visible;
+}
+
+.card-icon-small {
+  position: absolute;
+  top: .5em;
+  left: .6em;
+  visibility: hidden;
+}
+
+.icon-button {
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  background-size: 45px 45px;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: .3em;
+  text-indent: -999px;
+}
+
+.icon-button-behance { background-image: url("../images/logo-behance@2x.png"); }
+.icon-button-behance:hover { background-color: #5889f9; }
+
+.icon-button-dribbble { background-image: url("../images/logo-dribbble@2x.png"); }
+.icon-button-dribbble:hover { background-color: #e97ca7; }
+
+.icon-button-twitter { background-image: url("../images/logo-twitter@2x.png"); }
+.icon-button-twitter:hover { background-color: #68b6f9; }
+
+.icon-button-text { background-image: url("../images/icon-text@2x.png"); }
+.icon-button-text:hover { background-color: #62EB89; }
+
+.icon-button-email { background-image: url("../images/icon-email@2x.png"); }
+.icon-button-email:hover { background-color: #9F9DF4; }
+
+.icon-button-pdf { background-image: url("../images/logo-PDF@2x.png"); }
+.icon-button-pdf:hover { background-color: #EADB5A; }
+
+.icon-button-linkedin { background-image: url("../images/logo-linkedin@2x.png"); }
+.icon-button-linkedin:hover { background-color: #4EB1E6; }
+
+.content {
+  display: none;
+}
+
+.content.content-active {
+  display: inherit;
+}
+
+.text {
+  font-size: 16px;
+  padding: 1em .5em;
+  font-weight: 300;
+  display: flex;
+  max-width: 700px;
+}
+
+.text p {
+  flex: 1;
+}
+
+.naz {
+  width: 100%;
+  margin-left: 40px;
+  flex: 1;
+}
+
+.naz img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+footer,
+figcaption {
+  color: #B7B59E;
+  font-size: 0.8em;
+}
+
+@media (max-width: 500px) {
+  .text {
+    display: block;
+  }
+  .naz {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  .card {
+    width: 95px;
+  }
+}
