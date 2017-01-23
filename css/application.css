@@ -82,9 +82,19 @@ strong {
 }
 
 .card-portfolio:hover,
-.card-portfolio.card-active { border-color: #B6EFE4; }
-.card-biography:hover { border-color: #C0C0FC; }
-.card-resume:hover    { border-color: #F7EF6F; }
+.card-portfolio.card-active {
+  border-color: #B6EFE4;
+}
+
+.card-biography:hover,
+.card-biography.card-active {
+  border-color: #C0C0FC;
+}
+
+.card-resume:hover,
+.card-resume.card-active {
+  border-color: #F7EF6F;
+}
 
 .card:hover .card-icon-small,
 .card-active .card-icon-small {
