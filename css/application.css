@@ -37,11 +37,13 @@ strong {
   background-image: url('../images/yunus-whale@2x.png');
   background-size: 51px 53px;
   height: 53px;
-  width: 51px
+  width: 51px;
+  margin-bottom: 4px;
 }
 
-.message-row { margin-top: .2em; }
-.card-row    { margin: .5em 0; }
+.message-row {
+  margin-bottom: 2px;
+}
 
 .message {
   border-radius: 1.2em;
@@ -59,10 +61,15 @@ strong {
   border-top-left-radius: .4em;
 }
 
+.card-row {
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
 .card {
-  border-radius: .7em;
+  border-radius: 10px;
   background-color: white;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.08);
   width: 111px;
   height: 111px;
   text-align: center;
@@ -71,6 +78,7 @@ strong {
   cursor: pointer;
   border: 3px solid white;
   position: relative;
+  margin-right: 6px;
 }
 
 .card-portfolio:hover,
@@ -96,8 +104,9 @@ strong {
   width: 45px;
   background-size: 45px 45px;
   background-color: rgba(0, 0, 0, 0.15);
-  border-radius: .3em;
+  border-radius: 5px;
   text-indent: -999px;
+  margin-right: 6px;
 }
 
 .icon-button-behance { background-image: url("../images/logo-behance@2x.png"); }
@@ -131,7 +140,7 @@ strong {
 
 .text {
   font-size: 16px;
-  padding: 1em .5em;
+  padding: 18px 11px;
   font-weight: 300;
   display: flex;
   max-width: 700px;
@@ -139,6 +148,7 @@ strong {
 
 .text p {
   flex: 1;
+  max-width: 325px;
 }
 
 .naz {
@@ -156,7 +166,7 @@ strong {
 footer,
 figcaption {
   color: #B7B59E;
-  font-size: 0.8em;
+  font-size: 12px;
 }
 
 @media (max-width: 500px) {
