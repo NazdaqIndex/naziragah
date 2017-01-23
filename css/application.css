@@ -39,6 +39,7 @@ strong {
   height: 53px;
   width: 51px;
   margin-bottom: 4px;
+  display: inline-block;
 }
 
 .message-row {
@@ -78,7 +79,10 @@ strong {
   cursor: pointer;
   border: 3px solid white;
   position: relative;
-  margin-right: 6px;
+}
+
+.card:not(:last-child) {
+  margin-right: 3px;
 }
 
 .card-portfolio:hover,
