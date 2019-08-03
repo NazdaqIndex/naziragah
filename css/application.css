@@ -123,8 +123,11 @@ strong {
   margin-right: 4px;
 }
 
+.icon-button-portfolio { background-image: url("../images/logo-portfolio@2x.png"); }
+.icon-button-portfolio:hover { background-color: #4CE0C0; }
+
 .icon-button-behance { background-image: url("../images/logo-behance@2x.png"); }
-.icon-button-behance:hover { background-color: #5889f9; }
+.icon-button-behance:hover { background-color: #478BFF; }
 
 .icon-button-dribbble { background-image: url("../images/logo-dribbble@2x.png"); }
 .icon-button-dribbble:hover { background-color: #e97ca7; }
